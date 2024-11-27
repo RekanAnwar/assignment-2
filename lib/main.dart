@@ -70,18 +70,18 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: Colors.blue,
         title: Text(title),
       ),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
-          children: [
+          children: const [
             DrawerHeader(
               decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.inversePrimary,
+                color: Colors.blue,
               ),
-              child: const Text(
+              child: Text(
                 'Menu',
                 style: TextStyle(
                   fontSize: 24,
@@ -89,15 +89,15 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
             ),
-            const ListTile(
+            ListTile(
               leading: Icon(Icons.home),
               title: Text('Home'),
             ),
-            const ListTile(
+            ListTile(
               leading: Icon(Icons.shopping_cart),
               title: Text('Cart'),
             ),
-            const ListTile(
+            ListTile(
               leading: Icon(Icons.settings),
               title: Text('Settings'),
             ),
